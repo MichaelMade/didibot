@@ -1,4 +1,4 @@
-var wfhbot = require('./wfhbot');
+var didibot = require('./didibot');
 var express = require('express');
 var bodyParser = require('body-parser');
 
@@ -21,4 +21,4 @@ app.listen(port, function () {
   console.log('Slack bot listening on port ' + port);
 });
 
-app.post('/wfhbot', wfhbot);
+app.post('/didibot', didibot);
